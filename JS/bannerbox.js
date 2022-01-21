@@ -46,7 +46,7 @@ $(document).ready(function () {
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
-  data: { query: "수험서", size: 50 },
+  data: { query: "수험서", sort: "latest", size: 50 },
   headers: { Authorization: "KakaoAK c520cb5172aeec952fa88823508d155b" }
 })
   .done(function (msg) {
@@ -66,7 +66,7 @@ $.ajax({
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
-  data: { query: "참고서", size: 50 },
+  data: { query: "참고서", sort: "latest", size: 50 },
   headers: { Authorization: "KakaoAK c520cb5172aeec952fa88823508d155b" }
 })
   .done(function (msg) {
@@ -86,7 +86,7 @@ $.ajax({
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
-  data: { query: "외국어", size: 50 },
+  data: { query: "외국어", sort: "latest", size: 50 },
   headers: { Authorization: "KakaoAK c520cb5172aeec952fa88823508d155b" }
 })
   .done(function (msg) {
@@ -106,7 +106,7 @@ $.ajax({
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
-  data: { query: "대학", size: 50 },
+  data: { query: "대학", sort: "latest", size: 50 },
   headers: { Authorization: "KakaoAK c520cb5172aeec952fa88823508d155b" }
 })
   .done(function (msg) {
@@ -126,7 +126,7 @@ $.ajax({
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
-  data: { query: "에세이", size: 50 },
+  data: { query: "에세이", sort: "latest", size: 50 },
   headers: { Authorization: "KakaoAK c520cb5172aeec952fa88823508d155b" }
 })
   .done(function (msg) {
@@ -146,7 +146,7 @@ $.ajax({
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
-  data: { query: "자기계발", size: 50 },
+  data: { query: "자기계발", sort: "latest", size: 50 },
   headers: { Authorization: "KakaoAK c520cb5172aeec952fa88823508d155b" }
 })
   .done(function (msg) {
@@ -166,7 +166,7 @@ $.ajax({
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
-  data: { query: "문구", size: 50 },
+  data: { query: "addon", sort: "latest", size: 50 },
   headers: { Authorization: "KakaoAK c520cb5172aeec952fa88823508d155b" }
 })
   .done(function (msg) {
