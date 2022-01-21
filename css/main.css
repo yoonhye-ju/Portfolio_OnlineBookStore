@@ -1,0 +1,316 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li, ol, ul{list-style: none;}
+a{text-decoration: none;}
+.contents{width: 1200px; height: 100%; margin: 0 auto;}
+
+#loginBox{width: 100%; height: 60px; border-top: 4px solid #192c8d;}
+.login{width: 350px; height: 56px; display: flex; justify-content: space-around; align-items: center; float: right; padding-right: 1.5%;}
+.login li{font-size: 10px; font-weight: bold;}
+#headerBox{width: 100%; height: 150px;}
+#menu{width: 100%; height: 50px; background-color: cornflowerblue;}
+.logo{margin: 50px 0 0 30px; float: left;}
+
+.searchBox{width: 540px; height: 60px; position: relative; float: left; margin: 50px 0 0 50px;}
+.search{width: 540px; height: 55px; border: 2px solid #192c8d; border-radius: 10px; padding-left: 1.5%; font-size: 20px;}
+.searchIcon{margin: 12px 0 0 -50px; cursor: pointer; position: absolute;}
+
+#menuBox{width: 100%; height: 50px;}
+#menuBox>.contents{display: flex; flex-flow: row nowrap; justify-content: space-around;}
+.select{font-weight: bold;}
+.totalMenu{width:180px; height: 50px; background-color: rgb(34, 34, 34); color: white; display: flex; padding-left: 20px; padding-top: 14px; position: relative;}
+.bannerMenu{width: 180px; height: 400px; background: rgba(0, 0, 0, 0.5); color: white; position: absolute; top: 51px; left: 0; z-index: 3; display:flex; flex-direction: column; justify-content: space-around; cursor: pointer;}
+.bannerMenu li{font-size: 15px;  font-weight: bold; padding: 10%;}
+.bannerMenu li:hover{background-color: black;}
+.bannerMenu li a{color: white;}
+.menubar{margin-left: 50px;}
+.box{width: auto; height: 50px; font-size: 12px;}
+.box p{display: inline-block; padding-top: 8px; cursor: pointer;}
+.box img{vertical-align: middle; margin-bottom: 15px;}
+
+#banners{width: 100%; height: 400px; position: relative; border-top: 1px solid white; overflow: hidden;}
+#bannerBox01{width: 100%; height: 400px; background-color: #f4f0e6; position: absolute;}
+.banner01{margin-left: 17%;}
+#bannerBox02{width: 100%; height: 400px; background-color: #fbf9f2; display: none; position: absolute;}
+.banner02{margin-left: 17%;}
+#bannerBox03{width: 100%; height: 400px; background-color: #a97b59; display: none; position: absolute;}
+.banner03{margin-left: 17%;}
+#bannerBox04{width: 100%; height: 400px; background-color: #1a63d0; display: none; position: absolute;}
+.banner04{margin-left: 17%;}
+#bannerBox05{width: 100%; height: 400px; background-color: #151a3f; display: none; position: absolute;}
+.banner05{margin-left: 17%;}
+
+.SAT{width: 5000px; height: 400px; background-color: rgb(43, 43, 43); animation: satAni 50s linear infinite; transform: translate3d(0, 0, 0); display: none; position: absolute; top: 0; left: 0;}
+@keyframes satAni {
+  from {
+    transform: translate3d(0, 0, 0)
+  }
+ to {
+    transform: translate3d(-1200px, 0, 0)
+  }
+}
+.SATbox{width: 450px; height: 300px; background-color: white; margin: 50px 25px; float: left;}
+
+.hint{width: 5000px; height: 400px; background-color: rgb(43, 43, 43); animation: hintAni 50s linear infinite; transform: translate3d(0, 0, 0); display: none; position: absolute; top: 0; left: 0;}
+@keyframes hintAni {
+  from {
+    transform: translate3d(0, 0, 0)
+  }
+ to {
+    transform: translate3d(-1200px, 0, 0)
+  }
+}
+.hintBox{width: 450px; height: 300px; background-color: white; margin: 50px 25px; float: left;}
+
+.language{width: 5000px; height: 400px; background-color: rgb(43, 43, 43); animation: languageAni 50s linear infinite; transform: translate3d(0, 0, 0); display: none; position: absolute; top: 0; left: 0;}
+@keyframes languageAni {
+  from {
+    transform: translate3d(0, 0, 0)
+  }
+ to {
+    transform: translate3d(-1200px, 0, 0)
+  }
+}
+.languageBox{width: 450px; height: 300px; background-color: white; margin: 50px 25px; float: left;}
+
+.university{width: 5000px; height: 400px; background-color: rgb(43, 43, 43); animation: universityAni 50s linear infinite; transform: translate3d(0, 0, 0); display: none; position: absolute; top: 0; left: 0;}
+@keyframes universityAni {
+  from {
+    transform: translate3d(0, 0, 0)
+  }
+ to {
+    transform: translate3d(-1200px, 0, 0)
+  }
+}
+.universityBox{width: 450px; height: 300px; background-color: white; margin: 50px 25px; float: left;}
+
+.essay{width: 5000px; height: 400px; background-color: rgb(43, 43, 43); animation: essayAni 50s linear infinite; transform: translate3d(0, 0, 0); display: none; position: absolute; top: 0; left: 0;}
+@keyframes essayAni {
+  from {
+    transform: translate3d(0, 0, 0)
+  }
+ to {
+    transform: translate3d(-1200px, 0, 0)
+  }
+}
+.essayBox{width: 450px; height: 300px; background-color: white; margin: 50px 25px; float: left;}
+
+.self{width: 5000px; height: 400px; background-color: rgb(43, 43, 43); animation: selfAni 50s linear infinite; transform: translate3d(0, 0, 0); display: none; position: absolute; top: 0; left: 0;}
+@keyframes selfAni {
+  from {
+    transform: translate3d(0, 0, 0)
+  }
+ to {
+    transform: translate3d(-1200px, 0, 0)
+  }
+}
+.selfBox{width: 450px; height: 300px; background-color: white; margin: 50px 25px; float: left;}
+
+.moon{width: 5000px; height: 400px; background-color: rgb(43, 43, 43); animation: moonAni 50s linear infinite; transform: translate3d(0, 0, 0); display: none; position: absolute; top: 0; left: 0;}
+@keyframes moonAni {
+  from {
+    transform: translate3d(0, 0, 0)
+  }
+ to {
+    transform: translate3d(-1200px, 0, 0)
+  }
+}
+.moonBox{width: 450px; height: 300px; background-color: white; margin: 50px 25px; float: left;}
+
+.SATbox img{width: 150px; height: 200px; float: right; filter: drop-shadow(3px 3px 2px rgb(133, 133, 133));}
+.SATbox{padding: 40px;}
+.SATbox p{font-size: 11px; margin-bottom: 5px;}
+.SATbox h4{width: 180px; height: 50px; font-size: 25px;}
+
+.hintBox img{width: 150px; height: 200px; float: right; filter: drop-shadow(3px 3px 2px rgb(133, 133, 133))}
+.hintBox{padding: 40px;}
+.hintBox p{font-size: 11px; margin-bottom: 5px;}
+.hintBox h4{width: 180px; height: 50px; font-size: 25px;}
+
+.languageBox img{width: 150px; height: 200px; float: right; filter: drop-shadow(3px 3px 2px rgb(133, 133, 133))}
+.languageBox{padding: 40px;}
+.languageBox p{font-size: 11px; margin-bottom: 5px;}
+.languageBox h4{width: 180px; height: 50px; font-size: 25px;}
+
+.universityBox img{width: 150px; height: 200px; float: right; filter: drop-shadow(3px 3px 2px rgb(133, 133, 133))}
+.universityBox{padding: 40px;}
+.universityBox p{font-size: 11px; margin-bottom: 5px;}
+.universityBox h4{width: 180px; height: 50px; font-size: 25px;}
+
+.essayBox img{width: 150px; height: 200px; float: right; filter: drop-shadow(3px 3px 2px rgb(133, 133, 133))}
+.essayBox{padding: 40px;}
+.essayBox p{font-size: 11px; margin-bottom: 5px;}
+.essayBox h4{width: 180px; height: 50px; font-size: 25px;}
+
+.selfBox img{width: 150px; height: 200px; float: right; filter: drop-shadow(3px 3px 2px rgb(133, 133, 133))}
+.selfBox{padding: 40px;}
+.selfBox p{font-size: 11px; margin-bottom: 5px;}
+.selfBox h4{width: 180px; height: 50px; font-size: 25px;}
+
+.moonBox img{width: 150px; height: 200px; float: right; filter: drop-shadow(3px 3px 2px rgb(133, 133, 133))}
+.moonBox{padding: 40px;}
+.moonBox p{font-size: 11px; margin-bottom: 5px;}
+.moonBox h4{width: 180px; height: 50px; font-size: 25px;}
+
+#bookToday{width: 100%; height: 600px; background: rgb(255,255,255); background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(229,229,244,1) 100%);}
+.bookToday_text{width: 100%; height: auto; padding-top: 50px; padding-left: 30px; display: flex; align-items: center;}
+.todaySapn{font-size: 15px; margin-left: 10px;}
+.todayBook_Box{display: flex; justify-content: space-around;}
+.todayBox{width: 20%; height: 450px; background-color: white; border-radius: 5%; margin-top: 40px; opacity: 0.7; text-align: center; padding: 3%;}
+
+.todayBox img{width:160px; height:220px; margin-bottom: 45px;}
+.todayBox span{font-size: 14px; display: inline-block;  margin-bottom: 3px;}
+.todayBox h4{font-size: 18px; margin-bottom: 10px;}
+.todayBox p{font-size: 11px;}
+
+#bestchart_Box{width: 100%; height: 900px;}
+.bestchart_Text{padding: 40px 0 0 30px;}
+.btn_Box{width: 100%; height: 100px; border-bottom: 1px solid #e5e5e5; display: flex; justify-content: space-around;}
+.btn{width: 150px; height: 35px; border: 1px solid #e5e5e5; font-size: 16px; border-radius: 30px; margin-top: 3.5%; background-color: white; color: #666;}
+.btn:hover{background-color: #464b6f; color: white; border: none; cursor: pointer;}
+.choice{background-color: #464b6f; color: white; border: none; cursor: pointer;}
+
+.bestRight{width: 100%; height: 80%; display: flex; justify-content: space-around; flex-flow: row wrap; padding-top: 30px;}
+.bestchart{width: 18%; height: 310px; background-color: white;}
+
+.bestRight2{width: 100%; height: 80%; display: flex; justify-content: space-around; flex-flow: row wrap; padding-top: 30px; display: none;}
+.bestchart2{width: 18%; height: 310px; background-color: white;}
+
+.bestRight3{width: 100%; height: 80%; display: flex; justify-content: space-around; flex-flow: row wrap; padding-top: 30px; display: none;}
+.bestchart3{width: 18%; height: 310px; background-color: white;}
+
+.bestRight4{width: 100%; height: 80%; display: flex; justify-content: space-around; flex-flow: row wrap; padding-top: 30px; display: none;}
+.bestchart4{width: 18%; height: 310px; background-color: white;}
+
+.bestRight5{width: 100%; height: 80%; display: flex; justify-content: space-around; flex-flow: row wrap; padding-top: 30px; display: none;}
+.bestchart5{width: 18%; height: 310px; background-color: white;}
+
+.bestRight6{width: 100%; height: 80%; display: flex; justify-content: space-around; flex-flow: row wrap; padding-top: 30px; display: none;}
+.bestchart6{width: 18%; height: 310px; background-color: white;}
+
+.bestRight7{width: 100%; height: 80%; display: flex; justify-content: space-around; flex-flow: row wrap; padding-top: 30px; display: none;}
+.bestchart7{width: 18%; height: 310px; background-color: white;}
+
+.bestRight img{width:138px; height:190px; display: block; margin-bottom: 10px; border: 1px solid #e5e5e5;}
+.bestRight h5{font-size: 11px; display: block;  margin-bottom: 3px;}
+.bestRight h4{font-size: 16px; margin-bottom: 10px;}
+.bestRight p{font-size: 10px;}
+
+.bestRight2 img{width:138px; height:190px; display: block; margin-bottom: 10px; border: 1px solid #e5e5e5;}
+.bestRight2 h5{font-size: 11px; display: block;  margin-bottom: 3px;}
+.bestRight2 h4{font-size: 16px; margin-bottom: 10px;}
+.bestRight2 p{font-size: 10px;}
+
+.bestRight3 img{width:138px; height:190px; display: block; margin-bottom: 10px; border: 1px solid #e5e5e5;}
+.bestRight3 h5{font-size: 11px; display: block;  margin-bottom: 3px;}
+.bestRight3 h4{font-size: 16px; margin-bottom: 10px;}
+.bestRight3 p{font-size: 10px;}
+
+.bestRight4 img{width:138px; height:190px; display: block; margin-bottom: 10px; border: 1px solid #e5e5e5;}
+.bestRight4 h5{font-size: 11px; display: block;  margin-bottom: 3px;}
+.bestRight4 h4{font-size: 16px; margin-bottom: 10px;}
+.bestRight4 p{font-size: 10px;}
+
+.bestRight5 img{width:138px; height:190px; display: block; margin-bottom: 10px; border: 1px solid #e5e5e5;}
+.bestRight5 h5{font-size: 11px; display: block;  margin-bottom: 3px;}
+.bestRight5 h4{font-size: 16px; margin-bottom: 10px;}
+.bestRight5 p{font-size: 10px;}
+
+.bestRight6 img{width:138px; height:190px; display: block; margin-bottom: 10px; border: 1px solid #e5e5e5;}
+.bestRight6 h5{font-size: 11px; display: block;  margin-bottom: 3px;}
+.bestRight6 h4{font-size: 16px; margin-bottom: 10px;}
+.bestRight6 p{font-size: 10px;}
+
+.bestRight7 img{width:138px; height:190px; display: block; margin-bottom: 10px; border: 1px solid #e5e5e5;}
+.bestRight7 h5{font-size: 11px; display: block;  margin-bottom: 3px;}
+.bestRight7 h4{font-size: 16px; margin-bottom: 10px;}
+.bestRight7 p{font-size: 10px;}
+
+.number{width: 30px; height: 30px; color: white; background-color: #151a3f; display: block; line-height: 30px; text-align: center; margin-top: -10px;}
+
+#people{width: 100%; height: 650px;}
+.people_Text{width: 100%; height: 130px; padding-top: 50px; padding-left: 30px; border-bottom: 1px solid #e5e5e5;}
+.people_Text>h2{margin-bottom: 10px;}
+.people_pic{width: 100%; height: 350px; display: flex; justify-content: space-around;}
+.peopleBox{width: 13%; height: 300px; background-color: white; margin-top: 30px;}
+.peopleBox img{width:100%; height:190px; margin-bottom: 10px; border: 1px solid #e5e5e5;}
+.peopleBox span{font-size: 13px; display: inline-block;  margin-bottom: 3px;}
+.peopleBox h4{font-size: 16px; margin-bottom: 10px;}
+.peopleBox p{font-size: 11px;}
+.textPic{margin: 3%;}
+
+#newBook{width: 100%; height: 650px;}
+.newBook_Text{width: 100%; height: 130px; padding-top: 50px; padding-left: 30px; border-bottom: 1px solid #e5e5e5;}
+.newBook_Text>h2{margin-bottom: 10px;}
+.newBook_pic{width: 100%; height: 350px; display: flex; justify-content: space-around;}
+.picBox{width: 13%; height: 300px; background-color: white; margin-top: 30px;}
+.picBox img{width:100%; height:190px; margin-bottom: 10px; border: 1px solid #e5e5e5;}
+.picBox span{font-size: 13px; display: inline-block;  margin-bottom: 3px;}
+.picBox h4{font-size: 16px; margin-bottom: 10px;}
+.picBox p{font-size: 11px;}
+.textPic{margin: 3%;}
+
+#teacher{width: 100%; height: 350px; overflow:hidden;}
+.teacher_Text{width: 1200px; height: 100px; margin: 0 auto; padding-left: 30px;}
+.teacher_Text>h2{margin-bottom: 10px;}
+.teacher_animate{width: 4500px; height: 200px; animation: teacherAni 50s linear infinite; transform: translate3d(0, 0, 0);}
+@keyframes teacherAni {
+  from {
+    transform: translate3d(0, 0, 0)
+  }
+ to {
+    transform: translate3d(-2243px, 0, 0)
+  }
+}
+.teacherPic{text-align: center; float: left; padding: 20px;}
+.teacherPic p{font-size: 16px; font-weight: bold;}
+.teacherPic span{font-size: 10px;}
+.teacherPic>img{border-radius: 50%;}
+
+#addon{width: 100%; height: 400px;}
+.addon_pic{width: 100%; height: 350px; display: flex; justify-content: space-around;}
+.addonText{padding-left: 30px;}
+.addonBox{width: 13%; height: 300px; background-color: white; margin-top: 30px;}
+.addonBox img{width:100%; height:190px; margin-bottom: 10px; border: 1px solid #e5e5e5;}
+.addonBox h4{margin-bottom: 10px;}
+.addonBox p{font-size: 13px;}
+
+#slidewrap{width: 100%; height: 90px; position: relative; overflow: hidden; cursor: pointer;}
+.slide{width: 5709px; height: 90px;}
+.slide li{width: 1903px; height: 90px; float: left;}
+
+
+#keyword{width: 100%; height: 400px; margin-top: 50px;}
+.keywordText{width: 100%; height: 30px; padding-left: 30px;}
+.keywordBox{display: flex; justify-content: space-around; flex-flow: row wrap; padding: 30px;}
+.keywordBox img{margin-bottom: 13px; cursor: pointer;}
+
+#serviceBox{width: 100%; height: 430px; background: linear-gradient(180deg, rgba(235,182,176,1) 0%, rgba(216,109,117,1) 100%); color: white;}
+.serviceText{width: 100%; height: 430px; padding-top: 5.5%; padding-left: 8%;}
+.bookstore{margin-bottom: 50px;}
+.bookstoreText{display: inline-block; line-height: 25px;}
+.bookstoreMore{margin-top: 25px; font-size: 11px;}
+
+#serviceBook{width: 100%; height: 350px; position: relative; margin-top: -80px;}
+.service_Book{display: flex; position:absolute; padding-left: 160px;}
+.sevice_Book li{filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.08));}
+.service_Book img{margin-right: 20px;}
+
+#bottom{width: 100%; height:650px;}
+#bottom>.contents{padding: 0% 4%;}
+.bottomText{width: 100%; margin-top: 50px; display: flex; justify-content: space-between;}
+.more{margin-top: 10px; font-size: 14px;}
+
+footer{width: 100%; height: 220px;}
+.footerTop{width: 100%; height: 70px; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; padding-top: 23px;}
+.footerTopLeft{width: 20%; display: flex; align-items: center; float: left; margin-left: 5%;}
+.line{width: 1px; height: 20px; background-color: #e5e5e5; margin-left: 30%;}
+.footerTopRight{width: 100%;}
+
+.footerLeft{width: 30%; height: 150px; float: left; padding-top:50px; }
+.footerLeft>img{width: 150px; float: right; margin-right: 50px;}
+.footerRight{width: 70%; height: 150px; padding-left: 3%; padding-top:50px; float: right;}
+.company{font-size: 12px;}
+.inform{font-size: 9px;}
+.more2{margin-top: 10px; font-size: 14px; margin-left: 32.5%;}
