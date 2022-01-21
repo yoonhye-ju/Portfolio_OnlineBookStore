@@ -1,7 +1,7 @@
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
-  data: { query: "시험", size: 50 },
+  data: { query: "시험", sort: "latest", size: 50 },
   headers: { Authorization: "KakaoAK c520cb5172aeec952fa88823508d155b" }
 })
   .done(function (msg) {
@@ -23,7 +23,7 @@ $.ajax({
   $.ajax({
     method: "GET",
     url: "https://dapi.kakao.com/v3/search/book?target=title",
-    data: { query: "문학", size: 50 },
+    data: { query: "문학", sort: "latest", size: 50 },
     headers: { Authorization: "KakaoAK c520cb5172aeec952fa88823508d155b" }
   })
     .done(function (msg) {
@@ -45,7 +45,7 @@ $.ajax({
     $.ajax({
       method: "GET",
       url: "https://dapi.kakao.com/v3/search/book?target=title",
-      data: { query: "인문교양", size: 50 },
+      data: { query: "인문교양", sort: "latest", size: 50 },
       headers: { Authorization: "KakaoAK c520cb5172aeec952fa88823508d155b" }
     })
       .done(function (msg) {
@@ -67,7 +67,7 @@ $.ajax({
       $.ajax({
         method: "GET",
         url: "https://dapi.kakao.com/v3/search/book?target=title",
-        data: { query: "경제경영", size: 50 },
+        data: { query: "경제경영", sort: "latest", size: 50 },
         headers: { Authorization: "KakaoAK c520cb5172aeec952fa88823508d155b" }
       })
         .done(function (msg) {
@@ -89,7 +89,7 @@ $.ajax({
         $.ajax({
           method: "GET",
           url: "https://dapi.kakao.com/v3/search/book?target=title",
-          data: { query: "수험서", size: 50 },
+          data: { query: "수험서", sort: "latest", size: 50 },
           headers: { Authorization: "KakaoAK c520cb5172aeec952fa88823508d155b" }
         })
           .done(function (msg) {
@@ -111,7 +111,7 @@ $.ajax({
           $.ajax({
             method: "GET",
             url: "https://dapi.kakao.com/v3/search/book?target=title",
-            data: { query: "자기계발", size: 50 },
+            data: { query: "자기계발", sort: "latest", size: 50 },
             headers: { Authorization: "KakaoAK c520cb5172aeec952fa88823508d155b" }
           })
             .done(function (msg) {
@@ -133,7 +133,7 @@ $.ajax({
             $.ajax({
               method: "GET",
               url: "https://dapi.kakao.com/v3/search/book?target=title",
-              data: { query: "다이어트", size: 50 },
+              data: { query: "다이어트", sort: "latest", size: 50 },
               headers: { Authorization: "KakaoAK c520cb5172aeec952fa88823508d155b" }
             })
               .done(function (msg) {
