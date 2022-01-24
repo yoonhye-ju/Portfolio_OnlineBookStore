@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li, ol, ul{list-style: none;}
+a{text-decoration: none;}
+body{font-family: 'Noto Sans KR', sans-serif;}
+.contents{width: 1200px; height: 100%; margin: 0 auto;}
+
+#loginBox{width: 100%; height: 60px; border-top: 4px solid #192c8d;}
+.login{width: 350px; height: 56px; display: flex; justify-content: space-around; align-items: center; float: right; padding-right: 1.5%;}
+.login li{font-size: 10px; font-weight: bold;}
+#headerBox{width: 100%; height: 150px;}
+#menu{width: 100%; height: 50px; background-color: cornflowerblue;}
+.logo{margin: 50px 0 0 30px; float: left;}
+
+.searchBox{width: 540px; height: 60px; position: relative; float: left; margin: 50px 0 0 50px;}
+.search{width: 540px; height: 55px; border: 2px solid #192c8d; border-radius: 10px; padding-left: 1.5%; font-size: 20px;}
+.searchIcon{margin: 12px 0 0 -50px; cursor: pointer; position: absolute;}
+
+#menuBox{width: 100%; height: 50px;}
+#menuBox p:hover{font-weight: bold;}
+#menuBox>.contents{display: flex; flex-flow: row nowrap; justify-content: space-around;}
+.select{font-weight: bold;}
+.totalMenu{width:180px; height: 50px; background-color: rgb(34, 34, 34); color: white; display: flex; padding-left: 20px; padding-top: 14px; position: relative;}
+.bannerMenu{width: 180px; height: 399px; background: rgba(0, 0, 0, 0.5); color: white; position: absolute; top: 51px; left: 0; z-index: 3; display:flex; flex-direction: column; justify-content: space-around; cursor: pointer;}
+.bannerMenu li{font-size: 15px;  font-weight: bold; padding: 10%;}
+.bannerMenu li:hover{background-color: black;}
+.bannerMenu li a{color: white;}
+.menubar{margin-left: 50px;}
+.box{width: auto; height: 50px; font-size: 12px;}
+.box p{display: inline-block; padding-top: 8px; cursor: pointer;}
+.box img{vertical-align: middle; margin-bottom: 15px;}
+
+footer{width: 100%; height: 220px;}
+.footerTop{width: 100%; height: 70px; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; padding-top: 23px;}
+.footerTopLeft{width: 20%; display: flex; align-items: center; float: left; margin-left: 5%;}
+.line{width: 1px; height: 20px; background-color: #e5e5e5; margin-left: 30%;}
+.footerTopRight{width: 100%;}
+
+.footerLeft{width: 30%; height: 150px; float: left; padding-top:50px; }
+.footerLeft>img{width: 150px; float: right; margin-right: 50px;}
+.footerRight{width: 70%; height: 150px; padding-left: 3%; padding-top:50px; float: right;}
+.company{font-size: 12px;}
+.inform{font-size: 9px;}
+.more2{margin-top: 10px; font-size: 14px; margin-left: 32.5%;}
