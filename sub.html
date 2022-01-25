@@ -17,6 +17,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="JS/minibook.js"></script>
   <script src="JS/bannerButton.js"></script>
+  <script src="JS/seriesBook.js"></script>
 </head>
 
 <div id="headerGroup">
@@ -107,7 +108,7 @@
       <div class="bookRight">
         <div class="bookRight_Top">
           <h3>
-            2022 커넥츠 공단기 선재국어 나침판 기출 변형 모의고사
+            2022 선재국어 나침판 기출 변형 모의고사
           </h3>
           <p>2022 공단기 모의고사</p>
           <span class="bookInform">이선재 지음</span>
@@ -162,15 +163,33 @@
               <input type="text" placeholder="1" class="counting">
               <button type="button" class="quantity_btn2">+</button>
             </div>
-
-            <div class="quantityBtn">
-              <button type="button" class="shopCart">장바구니</button>
-              <button type="button" class="buyNow">바로구매</button>
-            </div>
             
           </div>
+          <div class="quantityBtn">
+            <button type="button" class="shopCart">장바구니</button>
+            <button type="button" class="buyNow">바로구매</button>
+          </div>
+        </div>
+        <div class="pointBox">
+          <table>
+            <tr>
+              <th>적립금</th>
+              <td>210원</td>
+            </tr>
+            <tr>
+              <th>혜택</th>
+              <td>공부서점 회원 최대 16,500원 혜택</td>
+            </tr>
+            <tr>
+              <th>참고사항</th>
+              <td></td>
+            </tr>
+          </table>
         </div>
       </div>
+
+
+
       <div class="bookLeft">
         <div class="bookLeft_Top">
           <img src="img/book.jpg" alt="book">
@@ -178,11 +197,13 @@
         <div class="show">
           <img src="img/icon_book.png" alt="icon_book" width="25" height="25"><span>미리보기</span>
         </div>
-        <p>2022 공단기 모의고사</p>
+        <p class="test">2022 공단기 모의고사</p>
         <div class="bestSeller">
         <img src="img/icon_award.png" alt="icon_award" width="25" height="25"><span>공부서점 종합 베스트셀러 2위</span>
       </div>
+      <div class="starFive">
         <img src="img/icon_star.png" alt="icon_star" width="130">
+      </div>
       </div>
     </div>
   </div>
@@ -204,11 +225,23 @@
       <div class="seriesLeft">
         <div class="seriesLeft_UP">
           <h4>시리즈 도서</h4>
-          <button type="button">신간 알림 신청</button>
+          <button type="button" class="alarm">신간 알림 신청</button>
         </div>
         <div class="seriesLeft_DOWN">
-          <input type="checkbox"> <span>전체 상품 선택</span>
-  
+          <div class="product">
+            <input type="checkbox"><span>전체 상품 선택</span>
+          </div>
+          <div class="productSale">
+            <div class="storage">
+              <img src="img/icon_heart_black.png" alt="icon_heart_black" width="15" height="15"><span>보관함</span>
+            </div>
+            <div class="cartBag">
+              <img src="img/icon_cart.png" alt="icon_cart" width="18" height="18"><span>장바구니</span>
+            </div>
+            <div class="shopByNow">
+              <p>바로구매</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
