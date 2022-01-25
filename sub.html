@@ -15,6 +15,7 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="JS/minibook.js"></script>
 </head>
 
 <div id="headerGroup">
@@ -193,11 +194,36 @@
   <div class="contents">
     <div class="bookDetail_right">
       <div class="rightBox">
+        <div class="rightBox_count">
+          <div class="rightBox_quentity">
+            <div class="rightBox_quentity_right">
+              <div class="rightBox_quentity_count">
+                <button type="button" class="count_btn1">+</button>
+                <input type="text" placeholder="1" class="count">
+                <button type="button" class="count_btn2">-</button>
+              </div>
+            </div>
+            <div class="rightBox_quentity_left"></div>
+          </div>
+        </div>
+
+        <select id="rightBox_select">
+          <option class="선택안함" selected>선택안함</option>
+          <option value="정답해설별도">정답해설별도, 2pcs 분권(+800원 추가)</option>
+        </select>
+        <div class="rightBox_total">
+          <div class="rightBox_total_Left">
+            <h5>합계</h5>
+          </div>
+          <div class="rightBox_total_Right"></div>
+        </div>
+
         <div class="rightBox_btn">
           <button type="button" class="cart">장바구니</button>
           <button type="button" class="buy">바로구매</button>
         </div>
       </div>
+      
       <div class="rightBox_row"><img src="img/icon_book.png" alt="icon_book" width="30" height="30"><p>책 목차</p> </div>
       <div class="rightBox_row"><img src="img/icon_inform.png" alt="icon_inform" width="20" height="20"> <p>품목정보</p></div>
       <div class="rightBox_row"><img src="img/icon_note.png" alt="icon_note" width="20" height="20"> <p>분철안내</p></div>
