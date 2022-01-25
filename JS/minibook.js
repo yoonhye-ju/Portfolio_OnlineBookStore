@@ -5,7 +5,6 @@ $.ajax({
   headers: { Authorization: "KakaoAK c520cb5172aeec952fa88823508d155b" }
 })
   .done(function (msg) {
-    console.log(msg);
     var minibooks = document.getElementsByClassName('rightBox_quentity_left');
 
     for (var i = 0; i < minibooks.length; i++) {
@@ -16,4 +15,17 @@ $.ajax({
 
       $(".rightBox_quentity_left").eq(i).append("<h4>" + str6 + "</h4>");
     }
+    
+    finish(function (msg) {
+      var booksLeft = document.getElementsByClassName('bigBook');
+  
+      for (var i = 0; i < booksLeft.length; i++) {
+        $(".bigBook").eq(i).append('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+  
+        var str5 = msg.documents[i].title;
+        var str6 = str5.substring(0, 32);
+  
+        $(".bigBook").eq(i).append("<h4>" + str6 + "</h4>");
+      }
+    });
   });
