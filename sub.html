@@ -18,6 +18,8 @@
   <script src="JS/minibook.js"></script>
   <script src="JS/bannerButton.js"></script>
   <script src="JS/seriesBook.js"></script>
+  <script src="JS/checkbox.js"></script>
+  <script src="JS/reviewButton.js"></script>
 </head>
 
 <div id="headerGroup">
@@ -212,13 +214,15 @@
     <div class="contents">
       <div class="seriesRight">
         <div class="toic">
-          <input type="checkbox" class="checkbox">
+          <input type="checkbox" value="checkbox" class="checkbox">
           <div class="seriesBook">
+            <span class="discount">10%</span> <span class="discount2">1%</span>
           </div>
         </div>
         <div class="toic">
-          <input type="checkbox" class="checkbox">
+          <input type="checkbox" value="checkbox" class="checkbox">
           <div class="seriesBook">
+            <span class="discount">10%</span> <span class="discount2">1%</span>
           </div>
         </div>
       </div>
@@ -229,7 +233,7 @@
         </div>
         <div class="seriesLeft_DOWN">
           <div class="product">
-            <input type="checkbox"><span>전체 상품 선택</span>
+            <input type="checkbox" value="selectall" onclick="selectAll(this)"><span>전체 상품 선택</span>
           </div>
           <div class="productSale">
             <div class="storage">
@@ -257,8 +261,8 @@
 
 <div id="bookBottom">
   <div class="contents">
-    <div class="introduce">책소개</div>
-    <div class="review">리뷰(208건)</div>
+    <div class="introduce bg"><a href="#bookDetail">책소개</a></div>
+    <div class="review"><a href="#reviewBox">리뷰(208건)</a></div>
   </div>
 </div>
 
@@ -307,6 +311,7 @@
     <div class="bookDetail_left">
       <h3>책소개</h3>
       <div class="explain">
+        
       </div>
 
       <div class="bookDetailBox">
@@ -367,15 +372,66 @@
           </div>
           <div class="reviewAll2">
             <p><b>4.9</b>&nbsp;/&nbsp;5</p>&nbsp;&nbsp;&nbsp;
-            <img src="img/icon_star.png" alt="star" width="124px">
+            <img src="img/icon_star.png" alt="star" width="124">
           </div>
+        </div>
+
+        <div class="reviewPage">
+          <h4>[분철리뷰] 분철</h4>
+          <p class="personalInform">kmj6210*** &nbsp;| &nbsp;<img src="img/icon_star.png" alt="star" width="80" class="starPage"> &nbsp;| &nbsp;2022-01-26</p>
+          <img src="img/review01.jpg" alt="review01" width="130" height="130" class="selfImage">
+          <span>공부할때 보기 편해서 좋아요! 깔끔합니다.</span>
+        </div>
+
+        <div class="reviewPage">
+          <h4>[분철리뷰] 표지가 찢어져서 왔어요</h4>
+          <p class="personalInform">kby0*** &nbsp;| &nbsp;<img src="img/icon_star.png" alt="star" width="80" class="starPage"> &nbsp;| &nbsp;2022-01-26</p>
+          <img src="img/review02.jpg" alt="review01" width="130" height="130" class="selfImage">
+          <span>찢어져서 왔지만 그냥 사용하려구요</span>
+        </div>
+
+        <div class="reviewPage">
+          <h4>[일반리뷰] 좋아요</h4>
+          <p class="personalInform">c15994683728*** &nbsp;| &nbsp;<img src="img/icon_star.png" alt="star" width="80" class="starPage"> &nbsp;| &nbsp;2022-01-26</p>
+          <img src="img/review03.jpg" alt="review01" width="130" height="130" class="selfImage">
+          <span>좋아요좋어요국어100점좋아요</span>
+        </div>
+
+        <div class="reviewPage">
+          <h4>[분철리뷰] 분철 깔끔하고 좋아요</h4>
+          <p class="personalInform">rkdwldms4*** &nbsp;| &nbsp;<img src="img/icon_star.png" alt="star" width="80" class="starPage"> &nbsp;| &nbsp;2022-01-26</p>
+          <img src="img/review04.png" alt="review01" width="130" height="130" class="selfImage">
+          <span>배송도 빨라요! 파이팅!!</span>
+        </div>
+
+        <div class="reviewPage">
+          <h4>[분철리뷰] 분철잘되서 왔습니다</h4>
+          <p class="personalInform">eunjin*** &nbsp;| &nbsp;<img src="img/icon_star.png" alt="star" width="80" class="starPage"> &nbsp;| &nbsp;2022-01-26</p>
+          <img src="img/review05.jpeg" alt="review01" width="130" height="130" class="selfImage">
+          <span>분철이 되어 있어서 확실히 편하네요</span>
+        </div>
+
+        <div id="pagenationBox">
+          <ul class="pagenation">
+            <li>&lt;</li>
+            <li id="first">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>4</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>&gt;</li>
+          </ul>
         </div>
       </div>
       
     </div>
   </div>
 </div>
-
 
   <footer>
     <div class="footerLeft">
@@ -386,10 +442,9 @@
         <b> 회사소개 | 이용약관 [변경내용] | 개인정보처리방침 | [변경내용] | 고객센터 | 윤리경영</b> <br>
         <span class="inform"> ㈜에스티유니타스 커머스대표이사 : 김정택 사업자등록번호 : 530-85-00416통신판매업신고 : 제2016-경기파주-0313호 [사용자 정보확인]<br>
         사업장 주소 : 서울시 강남구 영동대로 417물류센터주소 : 경기도 파주시 직지길 322 (문발동 507-4)<br>
-        고객센터 : 1670-1489 | 제휴/도서홍보 제휴/도서홍보 커넥츠 공부서점 이메일</span>
+        고객센터 : 1670-1489 | 제휴/도서홍보 제휴/도서홍보 newbook@stunitas.com</span>
       </p>
     </div>
   </footer>
-
 </body>
 </html>

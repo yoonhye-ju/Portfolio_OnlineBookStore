@@ -4,7 +4,7 @@
 li, ol, ul{list-style: none;}
 a{text-decoration: none; color: black;}
 body{font-family: 'Noto Sans KR', sans-serif;}
-.contents{width: 1200px; height: 100%; margin: 0 auto; background-color: cornflowerblue;}
+.contents{width: 1200px; height: 100%; margin: 0 auto;}
 
 #bannerTop{width: 100%; height: 85px; border-top: 1px solid #e5e5e5; position: relative;}
 .bannerPlat{width: 100%; height: 100%; position: relative;}
@@ -25,8 +25,8 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .bookRight_Top h3{font-size: 20px; margin-bottom: 10px;}
 .bookRight_Top p{font-size: 12px; margin-bottom: 25px;}
 
-.bookInform{width: auto; height: 10px; background-color: #EBEDF7; box-shadow: 0px 0px 7px rgb(160 162 171 / 100%); border-radius: 13px; border: none; font-size: 12px; padding: 5px 10px;}
-.bookInform_Date{width: auto; height: 10px; border: 1px solid #e5e5e5; border-radius: 13px; background-color: white; font-size: 12px; padding: 5px;}
+.bookInform{width: auto; height: 10px; background-color: #EBEDF7; box-shadow: 0px 0px 7px rgb(160 162 171 / 12%); border-radius: 13px; border: none; font-size: 12px; padding: 5px 10px;}
+.bookInform_Date{width: auto; height: 10px; border: 1px solid #e5e5e5; border-radius: 13px; background-color: white; font-size: 12px; padding: 5px 10px;}
 
 .bookLeft{width: 50%; height: 100%; float: left;}
 .bookLeft_Top{width: 100%; height: 500px;}
@@ -43,7 +43,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 .bookRight_middle{width: 100%; height: 180px; border-bottom: 1px solid #e5e5e5; padding-top: 30px;}
 .bookRight_middleRight{width: 80%; height: 100%; float: right;}
-.slt{width: 100%; height: 45px; margin-bottom: 10px; border: 1px solid #999999; padding-left: 10px;}
+.slt{width: 100%; height: 45px; margin-bottom: 10px; border: 1px solid #cfcfcf; padding-left: 10px;}
 .bookRight_middleRight p{font-size: 11px; color: #999999;}
 
 .bookRight_middleLeft{width: 20%; height: 100%; float: left;}
@@ -53,7 +53,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .merit{width: 100%; height: 100px; border-bottom: 1px solid #e5e5e5; padding-top: 35px;}
 .meritRight{width: 80%; height: 100%; float: right;}
 .meritLeft{width: 20%; height: 100%; float: left; padding-top: 2px;}
-.recommend{width: 110px; height: 30px; float:left; border-radius: 3px; border: 1px solid #999999; margin-right: 8px; display: flex; justify-content: center; align-items: center; background-color: white;}
+.recommend{width: 110px; height: 30px; float:left; border-radius: 3px; border: 1px solid #cfcfcf; margin-right: 8px; display: flex; justify-content: center; align-items: center; background-color: white;}
 
 .quantity{width: 100%; height: 200px; padding-top: 35px; margin-bottom: 80px;}
 .quantity_btn1{width: 28px; height: 28px; text-align: center; background-color: white; border: 1px solid #cdcdcd; margin-right: -5px; cursor: pointer;}
@@ -72,28 +72,31 @@ table{color: #999999; font-size: 12px; text-align: left; font-weight: normal; wi
 
 .recommend img{vertical-align: -3px; margin-right: 5px;}
 .recommend span{font-size: 11px; color: #999999;}
-.daily{width: 95px; height: 30px; float: left; border-radius: 3px; border: 1px solid #999999; display: flex; justify-content: center; align-items: center; background-color: white;}
+.daily{width: 95px; height: 30px; float: left; border-radius: 3px; border: 1px solid #cfcfcf; display: flex; justify-content: center; align-items: center; background-color: white;}
 .daily img{vertical-align: -6px; margin-right: 5px;}
 .daily span{font-size: 11px; color: #999999;}
 
-#series{width: 100%; height: 300px;}
-#series>.contents{border: 1px solid #EEEEEE;}
-.seriesRight{width: 75%; height: 100%; float: right; display: flex; align-items: center; padding: 3%;}
+#series{width: 100%; height: 350px; text-align: center;}
+#series>.contents{border-top: 1px solid #EEEEEE; border-bottom: 1px solid #EEEEEE;}
+.seriesRight{width: 75%; height: 100%; float: right; display: flex; align-items: center; padding: 0% 3% 2% 3%;}
 .toic{width: 190px; height: 230px; margin-right: 3%;}
 .checkbox{float: left;}
-.seriesBook{width: 150px; height: 100%; background-color: dimgray; float: right;}
+.seriesBook{width: 150px; height: 100%; float: right;}
+.seriesBook p{font-size: 14px;}
+.discount{color: red; font-size: 13px; margin-right: 10px;}
+.discount2{color: #999999; font-size: 13px;}
 .seriesLeft{width: 25%; height: 100%; border-right: 1px solid #EEEEEE; float: left; padding-left: 3%;}
-.seriesLeft_UP{width: 100%; height: 50%; padding-top: 18%;}
+.seriesLeft_UP{width: 100%; height: 50%; padding-top: 18%; text-align: left;}
 .alarm{border: 1px solid #EEEEEE; background-color: white; font-size: 9px; padding: 8px; border-radius: 50px; color: #999999; margin-top: 8px;}
 
 .seriesLeft_DOWN{width: 100%; height: 50%;}
 .product{width: 100%; display: flex; align-items: center; cursor: pointer;}
 .product span{font-size: 12px; margin-left: 10px;}
-.productSale{width: 90%; height: 100px; background-color: antiquewhite; margin-top: 10px; border: 1px solid #999999; text-align: center;}
-.storage{width: 50%; height: 50px; background-color: white; border-right: 1px solid #999999; border-bottom: 1px solid #999999; float: left; padding-top: 10px; cursor: pointer;}
+.productSale{width: 90%; height: 100px; background-color: antiquewhite; margin-top: 10px; border: 1px solid #bebebe;text-align: center;}
+.storage{width: 50%; height: 50px; background-color: white; border-right: 1px solid #bebebe; border-bottom: 1px solid #bebebe; float: left; padding-top: 10px; cursor: pointer;}
 .storage img, .cartBag img{vertical-align: middle; margin-right: 5px;}
 .storage span, .cartBag span{font-size: 13px;}
-.cartBag{width: 50%; height: 50px; background-color: white; border-bottom: 1px solid #999999; float: right; padding-top: 10px;}
+.cartBag{width: 50%; height: 50px; background-color: white; border-bottom: 1px solid #bebebe; float: right; padding-top: 10px;}
 .shopByNow{background-color: #464B6F; width: 100%; height: 100%; cursor: pointer;}
 .shopByNow p{color: white; font-weight: bold; font-size: 13px; line-height: 45px;}
 
@@ -101,14 +104,16 @@ table{color: #999999; font-size: 12px; text-align: left; font-weight: normal; wi
 #advertisement>.contents{display: flex; justify-content: center; align-items: center;}
 #advertisement>.contents img{width: 551px; height: 98px; margin-right: 20px;}
 
-#bookBottom{width: 100%; height: 50px; border-top: 1px solid #EEEEEE; background-color: #EEEEEE; position: sticky; top: 0px; right: 0px; z-index: 3;}
-.introduce{width: 300px; height: 50px; background-color: white; text-align: center; float: left;line-height: 50px;}
-.review{width: 300px; height: 50px; text-align: center; float: left; line-height: 50px;}
+#bookBottom{width: 100%; height: 50px; border-top: 1px solid #e5e5e5; background-color: #EEEEEE; position: sticky; top: 0px; right: 0px; z-index: 3;}
 
-#bookDetail{width: 100%; height: auto;}
-.bookDetail_right{width: 25%; height: 700px; float: right; position: sticky; top: 100px; right: 0px;}
+.introduce{width: 300px; height: 49px;text-align: center; float: left;line-height: 50px;}
+.review{width: 300px; height: 49px; text-align: center; float: left; line-height: 50px;}
+.bg{background-color: #fff;}
 
-.rightBox{width: 280px; height: 450px; background-color: white; margin-bottom: 20px; padding: 15px;}
+#bookDetail{width: 100%; height: 9620px;}
+.bookDetail_right{width: 25%; height: 700px; float: right; position: sticky; top: 100px; right: 0px; margin-top: 60px; margin-bottom: 50px;}
+
+.rightBox{width: 280px; height: 450px; background-color: white; margin-bottom: 20px; padding: 15px; border: 1px solid #e5e5e5;}
 .rightBox_count{width: auto; height: 130px; margin-top: 10px; margin-bottom: 25px;}
 
 .rightBox_quentity_right{width: 60%; height: 100%; float: right;}
@@ -116,8 +121,8 @@ table{color: #999999; font-size: 12px; text-align: left; font-weight: normal; wi
 .count_btn1{width: 28px; height: 28px; text-align: center; background-color: white; border: 1px solid #cdcdcd; margin-right: -5px; cursor: pointer;}
 .count_btn2{width: 28px; height: 28px; text-align: center; background-color: white; border: 1px solid #cdcdcd; margin-left: -5px; cursor: pointer;}
 .count{width: 78px; height: 28px; border: 1px solid #cdcdcd; text-align: center;}
-.rightBox_quentity{position: relative;}
-.rightBox_quentity_left img{width: 100px; height: 130px;}
+.rightBox_quentity_left{position: relative;}
+.rightBox_quentity_left img{width: 100px; height: 130px; position: absolute;}
 .rightBox_quentity_left h4{font-size: 12px; position: absolute; top: 0; left: 0; padding-left: 119px;}
 #rightBox_select{width: 100%; height: 40px; border: 1px solid #cdcdcd; margin-bottom: 20px;}
 .rightBox_total{width: 100%; height: 60px; border-bottom: 1px solid #cdcdcd; margin-bottom: 30px;}
@@ -128,31 +133,42 @@ table{color: #999999; font-size: 12px; text-align: left; font-weight: normal; wi
 .cart{width: 250px; height: 50px; background-color: white; border: 1px solid #cdcdcd; font-size: 16px;  cursor: pointer;}
 .buy{width: 250px; height: 50px; background-color: #464B6F; color: white; z-index: 1; box-shadow: 0px 0px 10px rgb(151, 151, 151); border: none; font-size: 16px;  cursor: pointer;}
 
-.rightBox_row{width: 280px; height: 50px; background-color: white; border: 1px solid #EEEEEE; border-radius: 5px; margin-bottom: 10px; font-size: 14px; font-weight: bold; color: #999999; padding-top: 9px; text-align: center; cursor: pointer;}
+.rightBox_row{width: 280px; height: 50px; background-color: white; border: 1px solid #e5e5e5;; border-radius: 5px; margin-bottom: 10px; font-size: 14px; font-weight: bold; color: #999999; padding-top: 9px; text-align: center; cursor: pointer;}
 .rightBox_row img{margin-bottom: 5px; vertical-align: middle; margin-right: 5px;}
 .rightBox_row p{display: inline;}
 
 .bookDetail_left{width: 70%; height: auto; padding: 5%; margin-right: 50px;}
-.bookDetail_left>h3{width: 100%; height: 80px; border-top: 1px solid #EEEEEE; padding: 20px 0 80px 0; display: inline-block;}
+.bookDetail_left>h3{width: 100%; height: 80px; border-top: 1px solid #e5e5e5;; padding: 20px 0 80px 0; display: inline-block;}
 .explain{margin-bottom: 50px;}
-.bookDetail_left p{font-size: 14px; text-align: justify;}
 .bookPic{width: 100%;}
-.author, .bottomText{width: 100%; height: 80px; border-top: 1px solid #EEEEEE; padding: 20px 0 80px 0; margin-top: 50px;}
-.alarm2{border: 1px solid #EEEEEE; background-color: white; font-size: 9px; padding: 8px; border-radius: 50px; color: #999999; margin-top: -75px; float: right;}
+.author, .bottomText{width: 100%; height: 80px; border-top: 1px solid #e5e5e5;; padding: 20px 0 80px 0; margin-top: 50px;}
+.alarm2{border: 1px solid #e5e5e5;; background-color: white; font-size: 9px; padding: 8px; border-radius: 50px; color: #999999; margin-top: -75px; float: right; cursor: pointer;}
 .process{line-height: 25px;}
 
 #close{width: 100%; height: 100px; margin-top: 50px; position: relative;}
-.buttonClose{width: 480px; height: 65px; background-color: #333333; color: white; font-size: 15px; font-weight: bold; border-radius: 50px; border: none; margin-left: 125px; box-shadow: 0px 0px 7px rgb(160 162 171 / 100%);}
+.buttonClose{width: 480px; height: 65px; background-color: #333333; color: white; font-size: 15px; font-weight: bold; border-radius: 50px; border: none; margin-left: 125px; box-shadow: 0px 0px 7px rgb(160 162 171 / 100%); cursor: pointer;}
 .arrow{position: absolute; margin-top: 23px; margin-left: -190px;}
 
-#reviewPlz{width: 100%; height: 180px; text-align: center;}
+#reviewPlz{width: 100%; height: 180px; text-align: center; margin-top: 100px;}
 #reviewPlz p{font-size: 18px; text-align: center; line-height: 35px;}
-.present{border: none; font-weight: bold; font-size: 13px; color: white; width: 180px; height: 40px; background-color: #464B6F; border-radius: 50px; margin-top: 20px;}
+.present{border: none; font-weight: bold; font-size: 13px; color: white; width: 180px; height: 40px; background-color: #464B6F; border-radius: 50px; margin-top: 20px; cursor: pointer;}
 
-#reviewBox{width: 100%; height: 1200px; background-color: darkgreen;}
+#reviewBox{width: 100%; height: 2250px;}
 .reviewAll{width: 100%; height: 100px; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; display: flex; align-items: center; justify-content: space-between;}
 .reviewAll1{width: 35%; height: auto; display: flex; align-items: center; justify-content: space-around;}
 .reviewAll span{font-size: 20px;}
-.reviewSelect{width: 100px; height: 30px;}
+.reviewSelect{width: 100px; height: 30px; font-size: 16px; border: 1px solid #cdcdcd;}
 .reviewAll2{display: flex;}
 .reviewAll2 p{font-size: 20px;}
+
+.reviewPage{width: 100%; height: 400px; padding-top: 35px; border-bottom: 1px solid #e5e5e5;}
+.reviewPage h4{margin-bottom: 10px;}
+.selfImage{margin-bottom: 30px;}
+.starPage{vertical-align: middle;}
+.personalInform{font-size: 12px; color: #666666; margin-bottom: 30px;}
+.reviewPage span{font-size: 14px; display: block; color: #666666;}
+
+#pagenationBox{width: 100%; height: 150px; text-align: center;}
+.pagenation{display: inline-block; padding: 0; margin-top: 50px;}
+.pagenation li{float: left; display: block; padding: 3px; line-height: 1.5; color: #a3a3a3;font-size: 12px; width: 25px; height: 25px; border: 1px solid #e5e5e5; border-radius: 3px; margin-left: 10px; cursor: pointer;}
+#first{font-weight: bold; color: #333333;}

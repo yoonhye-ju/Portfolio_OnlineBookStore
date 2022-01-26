@@ -10,13 +10,15 @@ $.ajax({
     var seriesBooks = document.querySelectorAll('.seriesBook');
 
     for (var i = 0; i < seriesBooks.length; i++) {
-      $(".toic").eq(i).children(".seriesBook").append('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
-
+      $(".toic").eq(i).children(".seriesBook").prepend("<h4>" + msg.documents[i].price + "원"+"</h4>");
+      
       var str7 = msg.documents[i].title;
-      var str8 = str7.substring(0, 20);
+      var str8 = str7.substring(0, 30);
 
-      $(".toic").eq(i).children(".seriesBook").append("<h4>" + str8 + "</h4>");
+      $(".toic").eq(i).children(".seriesBook").prepend("<p>" + str8 + "</p>");
 
-      $(".toic").eq(i).children(".seriesBook").append("<p>" + msg.documents[i].price + "원"+"</p>");
+      $(".toic").eq(i).children(".seriesBook").prepend('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>");
+
+      
     }
   });
