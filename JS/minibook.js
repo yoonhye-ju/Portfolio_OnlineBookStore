@@ -1,7 +1,7 @@
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
-  data: {query: "2022 선재국어", sort: "latest", size: 10},
+  data: {query: "2022 선재국어 나침반", sort: "latest", size: 10},
   headers: { Authorization: "KakaoAK c520cb5172aeec952fa88823508d155b" }
 })
   .done(function (msg) {

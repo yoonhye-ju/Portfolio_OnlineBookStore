@@ -9,4 +9,7 @@ $(window).scroll(function(){
     $(".review").removeClass("bg");
   }
 });
+
+
+
  

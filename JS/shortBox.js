@@ -1,0 +1,12 @@
+$(function(){
+  $('.buttonOpen').click(function(){
+    $('.bookDetailBox').show();
+    $('.bookDetailBox').scrollTop(2300);
+    $('.shortBook').hide();
+  });
+  $('.buttonClose').click(function(){
+    $('.bookDetailBox').hide();
+    $('.shortBox').scrollTop(2000);
+    $('.shortBook').show();
+  });
+});
