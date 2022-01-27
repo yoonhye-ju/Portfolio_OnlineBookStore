@@ -21,6 +21,8 @@
   <script src="JS/checkbox.js"></script>
   <script src="JS/reviewButton.js"></script>
   <script src="JS/shortBox.js"></script>
+  <script src="JS/alert.js"></script>
+  <script src="JS/price.js"></script>
 </head>
 
 <div id="headerGroup">
@@ -121,8 +123,8 @@
         <div class="bookRight_middle">
           <div class="bookRight_middleRight">
             <select class="slt">
-              <option class="선택안함" selected>선택안함</option>
-              <option value="정답해설별도">정답해설별도, 2pcs 분권(+800원 추가)</option>
+              <option value="0원" selected>선택안함</option>
+              <option value="800원" class="choice">정답해설별도, 2pcs 분권(+800원 추가)</option>
             </select>
             <p>
               *분철 도서는 주문하신 후 3일 이내에 출고됩니다. (평일 기준, 자사 재고 보유 도서 기준) <br>
@@ -160,17 +162,23 @@
           </div>
 
           <div class="quantityRight">
-        
             <div class="quantityRight_Count">
               <button type="button" class="quantity_btn1">-</button>
-              <input type="text" placeholder="1" class="counting">
+              <input type="text" value="1" placeholder="1" class="counting">
               <button type="button" class="quantity_btn2">+</button>
             </div>
-            
+
+            <div class="quantityPrice">
+              <p class="delPrice"><del>21,000</del></p>
+              <span class="totalPrice">합계</span>
+              <span id="priceFirst">18,900원</span><br>
+              <span class="pointMoney point">적립</span> <span class="point money">적립금 210원</span> <span class="point moneyPoint">(1%)</span>
+            </div>
           </div>
+
           <div class="quantityBtn">
-            <button type="button" class="shopCart">장바구니</button>
-            <button type="button" class="buyNow">바로구매</button>
+            <button type="button" class="shopCart"><b>장바구니</b></button>
+            <button type="button" class="buyNow"><b>바로구매</b></button>
           </div>
         </div>
         <div class="pointBox">
@@ -287,14 +295,16 @@
         </div>
 
         <select id="rightBox_select">
-          <option class="선택안함" selected>선택안함</option>
-          <option value="정답해설별도">정답해설별도, 2pcs 분권(+800원 추가)</option>
+          <option value="0원" selected>선택안함</option>
+          <option value="800원">정답해설별도, 2pcs 분권(+800원 추가)</option>
         </select>
         <div class="rightBox_total">
           <div class="rightBox_total_Left">
             <h5>합계</h5>
           </div>
-          <div class="rightBox_total_Right"></div>
+          <div class="rightBox_total_Right">
+            <span id="price">18,900원</span>
+          </div>
         </div>
 
         <div class="rightBox_btn">
