@@ -8,7 +8,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 #bannerTop{width: 100%; height: 85px; border-top: 1px solid #e5e5e5; position: relative;}
 .bannerPlat{width: 100%; height: 100%; position: relative;}
-.bannerImage{margin-left: 2%; z-index: 5; position: absolute;}
+.bannerImage{margin-left: 35px; z-index: 5; position: absolute;}
 .bannerButton{width: 30px; height: 30px; position: absolute; z-index: 6; top: 0; right: 0; margin-right: 65px; border: none; cursor: pointer; background-color: transparent;}
 
 #book{width: 100%; height: 850px; margin-top: 50px;}
@@ -20,7 +20,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .bookTop_right img{margin-left: 30px; cursor: pointer;}
 .bookTop_right span{margin-left: 10px;}
 
-.bookRight{width: 50%; height: 100%; float: right;}
+.bookRight{width: 50%; height: 100%; float: right; padding-right: 30px;}
 .bookRight_Top{width: 100%; height: 120px; border-bottom: 1px solid #e5e5e5;}
 .bookRight_Top h3{font-size: 20px; margin-bottom: 10px;}
 .bookRight_Top p{font-size: 12px; margin-bottom: 25px;}
@@ -105,7 +105,7 @@ table{color: #999999; font-size: 12px; text-align: left; font-weight: normal; wi
 .storage{width: 50%; height: 50px; background-color: white; border-right: 1px solid #bebebe; border-bottom: 1px solid #bebebe; float: left; padding-top: 10px; cursor: pointer;}
 .storage img, .cartBag img{vertical-align: middle; margin-right: 5px;}
 .storage span, .cartBag span{font-size: 13px;}
-.cartBag{width: 50%; height: 50px; background-color: white; border-bottom: 1px solid #bebebe; float: right; padding-top: 10px;}
+.cartBag{width: 50%; height: 50px; background-color: white; border-bottom: 1px solid #bebebe; float: right; padding-top: 10px; cursor: pointer;}
 .shopByNow{background-color: #464B6F; width: 100%; height: 100%; cursor: pointer;}
 .shopByNow p{color: white; font-weight: bold; font-size: 13px; line-height: 45px;}
 
@@ -113,16 +113,17 @@ table{color: #999999; font-size: 12px; text-align: left; font-weight: normal; wi
 #advertisement>.contents{display: flex; justify-content: center; align-items: center;}
 #advertisement>.contents img{width: 551px; height: 98px; margin-right: 20px;}
 
-#bookBottom{width: 100%; height: 50px; border-top: 1px solid #e5e5e5; background-color: #EEEEEE; position: sticky; top: 0px; right: 0px; z-index: 3;}
+#bookBottom{width: 100%; height: 50px; border-top: 1px solid #e5e5e5; background-color: #EEEEEE; position: sticky; top: 0px; right: 0px; z-index: 5;}
 
 .introduce{width: 300px; height: 49px;text-align: center; float: left;line-height: 50px;}
 .review{width: 300px; height: 49px; text-align: center; float: left; line-height: 50px;}
 .bg{background-color: #fff; font-weight: bold;}
 
 .bookDetailBox{display: none;}
-
-#bookDetail{width: 100%; height: 3550px;}
+#bookDetail{width: 100%; height: 3800px;}
 .bookDetail_right{width: 25%; height: 700px; float: right; position: sticky; top: 100px; right: 0px; margin-top: 60px; margin-bottom: 50px;}
+
+.authorText{font-size: 14px; color: #666; line-height: 30px;}
 
 .rightBox{width: 280px; height: 450px; background-color: white; margin-bottom: 20px; padding: 15px; border: 1px solid #e5e5e5;}
 .rightBox_count{width: auto; height: 130px; margin-top: 10px; margin-bottom: 25px;}
@@ -151,7 +152,7 @@ table{color: #999999; font-size: 12px; text-align: left; font-weight: normal; wi
 
 .bookDetail_left{width: 70%; height: auto; padding: 5%; margin-right: 50px;}
 .bookDetail_left>h3{width: 100%; height: 80px; border-top: 1px solid #e5e5e5;; padding: 20px 0 80px 0; display: inline-block;}
-.explain{margin-bottom: 50px;}
+.explain{margin-bottom: 50px; font-size: 14px; color: #666; line-height: 30px;}
 .shortBook{width: 100%; height: 800px; position: relative;}
 .short{width: 100%; position: absolute;} 
 #open{width: 100%; height: 100px; margin-top: 700px; position: absolute; z-index: 3;}
@@ -161,7 +162,8 @@ table{color: #999999; font-size: 12px; text-align: left; font-weight: normal; wi
 .bookPic{width: 100%;}
 .author, .bottomText{width: 100%; height: 80px; border-top: 1px solid #e5e5e5;; padding: 20px 0 80px 0; margin-top: 50px;}
 .alarm2{border: 1px solid #e5e5e5;; background-color: white; font-size: 9px; padding: 8px; border-radius: 50px; color: #999999; margin-top: -75px; float: right; cursor: pointer;}
-.process{line-height: 25px;}
+.publisherText{font-size: 14px; color: #666; line-height: 30px;}
+.categoryText{font-size: 14px; color: #666; line-height: 30px;}
 
 #close{width: 100%; height: 100px; margin-top: 50px; position: relative;}
 .buttonClose{width: 480px; height: 65px; background-color: #333333; color: white; font-size: 15px; font-weight: bold; border-radius: 50px; border: none; margin-left: 125px; box-shadow: 0px 0px 7px rgb(160 162 171 / 100%); cursor: pointer;}
