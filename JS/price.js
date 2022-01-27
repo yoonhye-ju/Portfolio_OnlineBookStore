@@ -1,3 +1,4 @@
+//큰 창//
 $(function() {
   var price_sum = 18900;
 
@@ -50,7 +51,7 @@ $(function() {
     });
 });
 
-
+//작은 창//
 $(function () {
   var price_sum = 18900;
 
