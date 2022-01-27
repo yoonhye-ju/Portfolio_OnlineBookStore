@@ -1,7 +1,7 @@
 $.ajax({
   method: "GET",
   url: "https://dapi.kakao.com/v3/search/book?target=title",
-  data: { query: "시험", sort: "latest", size: 50 },
+  data: { query: "2022 시험", sort: "latest", size: 50 },
   headers: { Authorization: "KakaoAK c520cb5172aeec952fa88823508d155b" }
 })
   .done(function (msg) {
@@ -111,7 +111,7 @@ $.ajax({
           $.ajax({
             method: "GET",
             url: "https://dapi.kakao.com/v3/search/book?target=title",
-            data: { query: "자기계발", sort: "latest", size: 50 },
+            data: { query: "명상 힐링", sort: "latest", size: 50 },
             headers: { Authorization: "KakaoAK c520cb5172aeec952fa88823508d155b" }
           })
             .done(function (msg) {
